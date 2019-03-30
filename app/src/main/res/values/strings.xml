@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">App Student</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_meterias">MATERIAS</string>
+    <string name="name_itinerario">TAREAS</string>
+    <string name="name_grabaciones">GRABACIONES</string>
+    <string name="name_notas">NOTAS</string>
+
+    <string-array name="numeros_nota">
+        <item>Nota 1</item>
+        <item>Nota 2</item>
+        <item>Nota 3</item>
+    </string-array>
+</resources>

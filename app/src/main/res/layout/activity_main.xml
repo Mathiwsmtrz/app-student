@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/title_home"
+                android:text="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_home_tareas"
+                    style="@style/btn_home"
+                    android:layout_weight="1"
+                    android:onClick="abrirActivity"
+                    android:drawableLeft="@drawable/ic_clip_back"
+                    android:text="@string/name_itinerario"
+                    />
+
+                <Button
+                    android:id="@+id/btn_home_materias"
+                    style="@style/btn_home"
+                    android:layout_weight="1"
+                    android:onClick="abrirActivity"
+                    android:drawableLeft="@drawable/ic_launcher_back"
+                    android:text="@string/name_meterias"/>
+
+                <Button
+                    android:id="@+id/btn_home_notas"
+                    style="@style/btn_home"
+                    android:layout_weight="1"
+                    android:onClick="abrirActivity"
+                    android:drawableLeft="@drawable/ic_lists_back"
+                    android:text="@string/name_notas"/>
+
+                <Button
+                    android:id="@+id/btn_home_records"
+                    style="@style/btn_home"
+                    android:layout_weight="1"
+                    android:onClick="abrirActivity"
+                    android:drawableLeft="@drawable/ic_record_back"
+                    android:text="@string/name_grabaciones"/>
+                <Button
+                    android:id="@+id/btn_home_graficos"
+                    style="@style/btn_home"
+                    android:layout_weight="1"
+                    android:onClick="abrirActivity"
+                    android:drawableLeft="@drawable/ic_bar_charts"
+                    android:text="ESTADISTICAS"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cerrar_sesion"
+                    android:text="Cerrar sesion" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
